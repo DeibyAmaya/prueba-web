@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding-inline-start: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+    
+/* ------------------------- cabezera -------------------------------- */
+
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.logo img{
+    width: 140px;
+    padding-top: 45px;
+    filter: drop-shadow(40px 20px 30px rgba(0,0,0,0.8));
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+.menu nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: opacity 300ms;
+    padding: 10px;
+    
+}
+
+.menu nav ul li a:hover{
+    background: #000000;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.btn_torneos_activos,
+.btn_torneos_activos2{
+    padding: 14px 30px;
+    border: none;
+    background: #000;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.btn_torneos_activos:hover,
+.btn_torneos_activos2:hover{
+    background: #ffffff;
+    color:rgb(0, 0, 0);
+}
+
+#icono_menu{
+    display: none;
+}
+
+/* --------------------------- portada -------------------------- */
+
+.fondo_presentacion{  
+    height: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/baloncancha.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor_presentacion{
+    max-width: 1200px;
+    height: auto;
+    padding: 40px;
+    padding-top: 80px;
+    margin: auto;
+    
+}
+
+.info_presentacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.texto_presentacion{
+    width: 50%;
+}
+
+.texto_presentacion h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.texto_presentacion p{
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn_mas_info{
+    background: #000;
+    padding: 14px 40px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background, color, 300ms;
+}
+
+.btn_mas_info:hover{
+    background: #E8E8E8;
+    color: #000;
+}
+
+.botones_presentacion{
+    display: flex;
+    margin-top: 30px;
+}
+
+.video_presentacion{
+    width: 50%;
+}
+
+.video_presentacion video{
+    width: 100%;
+    margin-top: 0;
+
+}
+
+/* --------------------------- Eslogan --------------------------- */ 
+
+.fondo_eslogan{
+    background-color: rgb(47, 213, 255);
+}
+
+.contenedor_eslogan{
+    max-width: 1200px;
+    height: auto;
+    padding: 40px;
+    margin: auto;
+    
+}
+
+.info_eslogan{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.eslogan{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.eslogan_img{
+    padding: 20px;    
+}
+
+#img_eslogan{
+    width: 400px;
+    border-radius: 40px;
+}
+
+.banner__text{
+    width: 60%;
+    padding: 40px;
+}
+
+.banner__text h2{
+    color: rgb(0, 0, 0);
+    font-size: 43px;
+    font-weight: 400;
+    padding: 0px 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.banner__text a{
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 300ms;
+}
+
+.banner__text a:hover{
+    color: #69f1a1;
+}
+
+/* ----------------------- Pie De Pagina ------------------------ */
+.fondo_pie{
+    background-color: #140b5c;
+}
+.contenedor_pie{
+    max-width: 1200px;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+}
+
+.info_pie_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo_nombre{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_pie{
+    width: 120px;
+}
+
+.nombre_pie{
+    font-size: 25px;
+    color: white;
+}
+
+.redes_sociales{
+    font-size: 35px;
+}
+
+.fb{
+    background: blue;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.yt{
+    background: #ff0000;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.itg{
+    background: #f700a1;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.tt{
+    background: rgb(0, 0, 0);
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.twitch{
+    background: #772ce8;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.wa{
+    background: #00e676;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+.twitter{
+    background: #1da1f2;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    background-color: #0a0437;
+    
+}
+
+
+/* ---------------------- Ajustes Pagina Responsive ------------------------- */
+    @media (max-width: 1100px){
+        .contenedor__header{
+            padding: 20px;
+            display: contents;
+        }
+
+    .logo{
+        padding-left: 13%;
+    }
+
+        #icono_menu{
+            display: block;
+            cursor: pointer;
+            font-size: 35px;
+            padding-right: 10%;
+            padding-top: 50px;
+        }
+        
+
+        .btn_torneos_activos{
+            display: none;
+        }
+
+        .menu{
+            height: 0px;
+            position: absolute;
+            right: 20px;
+            top: 95px;
+            overflow: hidden;
+            z-index: 10;
+            box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.5);
+            transition: all 300ms;
+        }
+
+        .menu nav ul{
+            padding: 20px 0px;
+            flex-direction: column;
+            background: #ffffff;
+        }
+        .menu nav ul li{
+            padding: 10px 20px;
+        }
+
+
+        .menu nav ul li a{
+            font-size: 16px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: opacity 300ms;
+        }
+        .menu nav ul li a:hover{
+            background: #000000;
+            color: rgb(255, 255, 255);
+            opacity: 0.8;
+            border-radius: 5px;
+        }
+
+    .mostrar_menu{ /*Clase manipulada por JS*/
+            height: 235px;
+        }
+    /* ------------------------ Baner ------------------------ */
+        .contenedor_presentacion{
+            padding: 80px 20px 80px 20px;
+        }
+
+        .texto_presentacion h1{
+            font-size: 40px;
+        }
+
+        .texto_presentacion p{
+            font-size: 16px;
+        }
+
+        .banner__text h2{
+            font-size: 35px;
+        }
+
+        #img_eslogan{
+            left: -60;
+            width: 350px;
+        }
+/* ----------------------- Pie De Pagina ------------------------ */
+        .nombre_pie{
+            font-size: 20px;
+        }
+
+        .redes_sociales{
+            font-size: 30px;
+        }
+
+        .derechos{
+            font-size: 17px;
+        }
+
+    }
+
+    @media (max-width: 870px){
+        
+        .texto_presentacion{
+            width: 100%;
+            text-align: center;
+        }
+
+        .botones_presentacion{
+            display: block;
+            text-align: center;
+        }
+
+        .video_presentacion{
+            display: none;
+        }
+
+        .eslogan{
+            height: auto;
+            flex-wrap: wrap;
+            display: block;
+            text-align: center;
+        }
+
+        .eslogan_img{
+            padding: 20px 20px 0px 20px;
+        }
+
+        .banner__text{
+            width: 100%;
+            padding-top: 20px;
+        }
+/* ----------------------- Pie De Pagina ------------------------ */
+        .info_pie_header{
+            display: block;
+            text-align: center;
+        }
+
+        .logo_nombre{
+            display: block;
+        }
+        
+        .nombre_pie{
+            font-size: 17px;
+        }
+
+        .redes_sociales{
+            font-size: 27px;
+        }
+
+        .derechos{
+            font-size: 14px;
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+    @media (max-width: 480px){
+        
+        .texto_presentacion h1{
+            font-size: 35px;
+        }
+
+        .texto_presentacion p{
+            font-size: 16px;
+        }
+        
+        #img_eslogan{
+            width: 80%;
+        }
+
+        .botones_presentacion{
+            display: block;
+            text-align: center;
+        }
+
+        .btn_torneos_activos2,
+        .btn_mas_info{
+            font-size: 13px;
+            padding: 13px 30px;
+        }
+
+        .banner__text h2{
+            font-size: 25px;
+        }
+/* ----------------------- Pie De Pagina ------------------------ */
+        
+        .redes_sociales{
+            font-size: larger;
+        }
+
+        .derechos{
+            font-size: 12px;
+        }
+
+    }
